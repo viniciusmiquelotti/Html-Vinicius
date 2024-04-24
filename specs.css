@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+section#conteudo {
+	width: 1000px;
+	margin: auto;
+}
+
+iframe#frame-spec {
+	width: 399px;   
+	height: 280px;
+	border: none;
+	overflow: hidden;
+}  
+
+iframe#frame-spec::-webkit-scrollbar {
+	display: none;
+}
+
+/* 405->  400, 399, 397
+
+ /* Removendo qualquer sublinhado ou borda ao passar o mouse */
+ .testimonial-description:hover,
+ .testimonial-image:hover,
+ a:hover {
+     text-decoration: none;
+     border: none;
+ }

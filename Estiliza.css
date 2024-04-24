@@ -1,0 +1,12 @@
+#listaNomes div {
+    animation: dancaNome 1s infinite alternate;
+    font-size: 24px;
+    margin: 10px;
+}
+
+@keyframes dancaNome {
+    from { transform: translateX(0px); }
+    to { transform: translateX(20px); }
+}
+
+  

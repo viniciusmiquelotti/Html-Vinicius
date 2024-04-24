@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Tudo sobre Google Glass</title>
+	<link rel="stylesheet" type="text/css" href="Estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="Clientes.css"/>
+
+</head>
+<script language="javascript" src="funções.js"></script>
+ 
+
+<body>
+	<div id="interface">
+		<header id="cabecalho">
+		<hgroup>
+			<h1>Google Glass</h1>
+			<h2>A revolução do Google está chegando</h2>
+		</hgroup>
+  
+		<img  id="icone" src="img/glass-logo-peq.jpg"/>
+		<nav id="menu">
+        
+			<h1>Menu Principal</h1>
+			
+			<ul onmouseout="mudaFoto('img/glass-oculos-preto-peq.png')">
+				<li onmouseover="mudaFoto('img/home.png')" ><a href="index.html">Home<a></li>
+				<li onmouseover="mudaFoto('img/especificacoes.png')" ><a href="specs.html">Especificações</a></li>
+				<li onmouseover="mudaFoto('img/fotos.png')"><a href="fotos.html">Fotos</a></li>
+				<li onmouseover="mudaFoto('img/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+				<li onmouseover="mudaFoto('img/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+				<li onmouseover="mudaFoto('img/glass-logo-peq.jpg')" ><a href="Cards.html">Cards<a></li>
+          <li onmouseover="mudaFoto('img/glass-logo-peq.jpg')" ><a href="Show.html">Show<a></li>
+          <li onmouseover="mudaFoto('img/glass-oculos-preto-peq.png')" ><a href="Modelos.html">Modelos<a></li>
+			</ul>
+		</nav>
+		</header>
+        <br><br>
+        <title>Mais surpresas nos aguarda!!!</title>
+   
+    </head>
+    <body>
+      <div id="container">
+        <h1>Em breve mais convidados especiais </h1>
+    
+        <div id="description">
+          Esta é a lista de convidados bilionarios de vários paises
+          Logo abriremos uma novidade aguarde!!.
+        </div>
+        <br><br>
+
+
+            <style>
+                #container {
+                  position: relative;
+                  text-align: center;
+                }
+              
+                #radioImage {
+                  width: 439px; /* Ajuste a largura conforme necessário */
+                  height: auto;
+                }
+              
+                #musica {
+                  position: absolute;
+                  top: 83%; /* Centraliza verticalmente */
+                  left: 57%; /* Centraliza horizontalmente */
+                  transform: translate(-50%, -50%);
+                }
+              
+            /* Css */
+
+                .nomeAtual {
+                  animation: dancaNome 1s infinite alternate;
+                  font-size: 24px;
+                  margin: 10px;
+                  text-align: center;
+                }
+              
+                @keyframes dancaNome {
+                  from { transform: translateX(0px); }
+                  to { transform: translateX(20px); }
+                }
+              </style>
+              </head>
+            
+              <div id="container">
+                <img id="radioImage" src="img/gifs-de-caixa-de-som-34.gif" alt="Rádio" />
+                <audio id="musica" controls src="audio/mp3 Post Malone.mp3" preload="auto"></audio>
+              </div>
+             
+           <!-- A música está Pronta-->
+          </head>
+          <body>
+          <div id="nomesAtuais"></div>
+          <script>
+            var guestArray = [
+              "Samuel Faria dos Santos", "Otavio Augusto da Silva", "Vinicius Miquelotti Caladeira",
+              "Maria Souza", "Pedro Santos", "Ana Oliveira",
+              "Elon Musk", "Gustavo Guanabara", "Rafael Rocha", "Fernanda Fernandes",
+              "Gustavo Lima", "Juliana Santos", "Marcos Castro", "Sandra Pereira",
+              "Lucas Mendes", " Rodrigues Castro", "Diego Gomes", "Larissa Barbosa",
+              "Ricardo Alves", "Camila Sousa", "Gabriel Castro"
+            ];
+            
+            var nomesAtuais = document.getElementById("nomesAtuais");
+            var i = 0;
+            
+            function mostrarNomes() {
+              nomesAtuais.innerHTML = ''; // Limpa os nomes anteriores
+              for(var j = 0; j < 3; j++) {
+                if(i + j < guestArray.length) {
+                  var div = document.createElement("div");
+                  div.innerText = guestArray[i + j];
+                  div.classList.add("nomeAtual");
+                  nomesAtuais.appendChild(div);
+                }
+              }
+              i += 3;
+              if(i >= guestArray.length) i = 0;
+            }
+            
+            mostrarNomes(); // Mostra os primeiros três nomes imediatamente
+            setInterval(mostrarNomes, 2000); // Alterna os nomes a cada 2 segundos
+          </script>
+          </body>
+         
+
+<footer id="rodape">
+    <p>Copyright &copy; 2024 - Gustavo Guanabara e Vinícius Miquelotti <br/>
+    <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a> | 
+    <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a> </p>
+</footer>
+</html>
+
+
+                

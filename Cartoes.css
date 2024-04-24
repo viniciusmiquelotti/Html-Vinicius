@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover img {
+    transform: translateY(-10px);
+  }
+  
+  .card p {
+    margin-top: 10px;
+  }
+  
+  .card h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  .card strong {
+    font-weight: bold;
+  }
+  
+  .card b {
+    font-weight: bold;
+  }
+  
+  .card p:first-child {
+    margin-top: 0;
+  }
+  
+  .card p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .card p:nth-child(2) {
+    color: green;
+    margin-top: 10px;
+  }
+  
+  .card p:nth-child(3) {
+    margin-bottom: 10px;
+  }
+  
+  .card:hover {
+    text-decoration: none;
+}
+
+.card h1:hover {
+    text-decoration: none;
+}
+
+ /* Removendo qualquer sublinhado ou borda ao passar o mouse */
+ .testimonial-description:hover,
+ .testimonial-image:hover,
+ a:hover {
+     text-decoration: none;
+     border: none;
+ }
